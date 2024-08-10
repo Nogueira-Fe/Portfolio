@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./tech_sphere-wallpaper-2400x1350.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+header {
+    display: flex;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1000;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 19.05%;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    list-style: none;
+}
+
+li:hover {
+    color: #fa9c50;
+}
+
+a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fa9c50;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -1s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.7s;
+    -webkit-animation-delay:  -0.7s;
+}
+
+.arrows path.a3 {
+    animation-delay:  -0.3s;
+    -webkit-animation-delay:  -0.3s;
+}
+
+.content-container {
+    height: 100vh;
+    background-color: #333;
+}
+
+.profile-container {
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./akin-cakiner-xKBmqz66gEs-unsplash.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-content {
+    width: 30%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4997b6;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.profile-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4997b6;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.divider {
+    width: 100%;
+    border-top: .5px solid #bfbfbf;
+    margin: 20px 0;
+}
+
+.icons-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse {
+    width: 430px;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 17px;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./projectbgg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-content {
+    width: 75%;
+    height: 80%;
+    display: grid;
+    grid-template-rows: repeat(1fr, 3);
+}
+
+.position-container {
+    width: 100%;
+    display: flex;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.project-card {
+    width: 700px;
+    height: 200px;
+    background-color: black;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reverse {
+    flex-direction: row-reverse;
+}
+
+.project-image {
+    width: 350px;
+    height: auto;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: 30px;
+}
+
+.image-reverse {
+    left: 20px;
+}
+
+.project-text {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./contact-img.avif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    width: 450px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+label {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    height: 30px;
+    margin-top: 10px;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    border-radius: 8px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contact-button {
+    width: 50%;
+    border: none;
+    background: #e5ff00 ;
+    color: #000000;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 24%;
+    transition: .8s;
+    font-size: 18px;
+}
+
+.contact-button:hover {
+    background-color: green;
+    color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.span-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 16px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="tel"] {
+    font-size: 18px;
+}
